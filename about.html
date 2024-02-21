@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <style>
+        .card-one {
+            /* background-color: red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 4rem;
+
+            /* align-items: ; */
+        }
+
+        p {
+            font-style: italic;
+            color: rgb(105, 98, 98);
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg text-white bg-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white bg-dark" href="BlogSpecial.html">BlogSpecial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white bg-dark" aria-current="page"
+                            href="BlogSpecial.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            We Talk About
+                        </a>
+                        <ul class="dropdown-menu text-white bg-dark">
+                            <li><a class="dropdown-item text-secondary" href="insecurities.html">Insecurities</a></li>
+                            <li><a class="dropdown-item text-secondary" href="we.html">How to Lead A Simple Life</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="mx-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#signModal">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModal">Not a member?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signModal">Already a member?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-one">
+        <div class="card" style="width: 18rem;">
+            <img src="carolina-ghYHNrzS8pk-unsplash (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Loneliness</h5>
+                <p class="card-text">We all come across this phase,sometimes we prefer being alone and sometimes we hate
+                    that lonely feeling.There are times when we are surounded by thousands of people yet we feel
+                    lonely.There is a big difference between being lonely and being alone.Some people prefer being alone
+                    yet they dont feel Loneliness.While some hate being alone,its okay if u are in a phase where you
+                    feel lonely but sometimes you have to come out of your comfort zone and mingle with people who love
+                    you for your mental well being.Ever you are in this in your life dont worry life's is just like
+                    season if threr is winter ,there comess spring.</p>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="photo-1470949009549-5aada2a4b212.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Self Acceptance</h5>
+                <p class="card-text">We, all at a certain situation accept things no matter how much if hurts us. But
+                    when it comes to self acceptance people tend to put a lot of pressure on themselves. When it comes
+                    to ourself we put a lot of restrictions on ourselves .No matter what happens in life at the end of
+                    the day you are all you have got.so we have to accept and embrace ourselves to lead a happy and
+                    peaceful life.Remember to be kind your body and your soul.
+                </p>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

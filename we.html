@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <style>
+        .first-para {
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+
+        }
+
+        p {
+            line-height: 2rem;
+            font-style: italic;
+            color: rgb(105, 98, 98);
+            font-weight: bold;
+
+        }
+
+        .hope {
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .second-para {
+
+            margin-left: 2rem;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg text-white bg-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white bg-dark" href="BlogSpecial.html">BlogSpecial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white bg-dark" aria-current="page"
+                            href="BlogSpecial.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            We Talk About
+                        </a>
+                        <ul class="dropdown-menu text-white bg-dark">
+                            <li><a class="dropdown-item text-secondary" href="insecurities.html">Insecurities</a></li>
+                            <li><a class="dropdown-item text-secondary" href="#">How to Lead A Simple Life</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="mx-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#signModal">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModal">Not a member?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signModal">Already a member?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="photo-1624274486616-37713f122bdb.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Happiness</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="photo-1431887773042-803ed52bed26.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Happiness</h5>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="first-para">
+            <h1>How to Lead A Simple Life</h1>
+
+        </div>
+        <div class="second-para">
+            <p>When it comes to life society makes it sound so complicated that we often forget how simple and beautiful
+                life is.Living your life doent not have to be grand,eating what you like,doing things you love is also
+                considered living.To lead a simple and peaceful life all you need to do is stop worrying about future.we
+                all know how uncertain future is.No matter how hard we try some things are meant to happen in our
+                life.You should plan for your future but at the same time you should take time to enjoy the present
+                moment.Having a healthy mindset is the key to lead a simple and peaceful life.Now you may question what
+                exactly is a healthy mindset and how does one accquire it?</p>
+            <p>To a healthy mindset one should stop lying to their own self and start being tru to themselves.There will
+                be times when you might make mistakes and during those times instead of lying to satisfy yourself,one
+                should start accepting the truth even though the truth might hurt you.Being true to oursellves is
+                something we all should do to have a healthy mindset instead of drowing yourself with pure lies that
+                will never satisfy your soul.</p>
+            <p>Stop comapring yourself with others.Different people have different talents and one cant expect to have
+                them all,so instead of comparing,you can try to find the talents you have within yourself.Always
+                remember comaprison is the destroyer of Happiness</p>
+            <p>Try to indulge yourself with activities like admiring nature "Nothing gives peace like nature does" if
+                you start noticing the small and pretty things that happens in nature like clouds,rain etc you will
+                definitely see some big changes in yourself.</p>
+
+        </div>
+        <div class="hope">
+            <h3> "Life's peaceful when you have the right person by your side"</h3>
+        </div>
+</body>
+
+</html>
